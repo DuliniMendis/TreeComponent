@@ -1,1 +1,1 @@
-export { default } from './DnDComponent';
+export { default } from './TreeComponent';
