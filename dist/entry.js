@@ -4,12 +4,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _DnDComponent = require('./DnDComponent');
+var _TreeComponent = require('./TreeComponent');
 
 Object.defineProperty(exports, 'default', {
   enumerable: true,
   get: function get() {
-    return _interopRequireDefault(_DnDComponent).default;
+    return _interopRequireDefault(_TreeComponent).default;
   }
 });
 
