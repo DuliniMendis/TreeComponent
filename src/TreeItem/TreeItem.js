@@ -12,9 +12,10 @@ constructor(props){
 }
 
 handleClick = (evt) =>{
-  if(this.props.list)
+  if(this.props.list && this.props.list.length>0){
+    console.log("in")
     this.setState({isMenuVisible:!this.state.isMenuVisible})
-
+  }
 
   this.props.handleClick(evt);
 }
@@ -23,6 +24,7 @@ handleClick = (evt) =>{
 
 
     let list = this.props.list?this.props.list:[];
+
     let sortIcon= "";
     if(this.state.isMenuVisible){
         sortIcon =  (<i className="fa fa-sort-desc" aria-hidden="true"></i>);;

@@ -34,7 +34,8 @@ export default class App extends Component {
         {
           id: 6,
           value: 'withdrawn',
-          name: 'Withdrawn'
+          name: 'Withdrawn',
+          list:[]
         },
         {
           id: 7,
