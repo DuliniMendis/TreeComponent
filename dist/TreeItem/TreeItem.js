@@ -31,7 +31,10 @@ var TreeItem = function (_Component) {
     var _this = _possibleConstructorReturn(this, (TreeItem.__proto__ || Object.getPrototypeOf(TreeItem)).call(this, props));
 
     _this.handleClick = function (evt) {
-      if (_this.props.list) _this.setState({ isMenuVisible: !_this.state.isMenuVisible });
+      if (_this.props.list && _this.props.list.length > 0) {
+        console.log("in");
+        _this.setState({ isMenuVisible: !_this.state.isMenuVisible });
+      }
 
       _this.props.handleClick(evt);
     };
@@ -48,6 +51,7 @@ var TreeItem = function (_Component) {
       var _this2 = this;
 
       var list = this.props.list ? this.props.list : [];
+
       var sortIcon = "";
       if (this.state.isMenuVisible) {
         sortIcon = _react2.default.createElement('i', { className: 'fa fa-sort-desc', 'aria-hidden': 'true' });;
